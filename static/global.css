@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'GeistVF';
+	src: url('assets/fonts/GeistVF.woff2') format('woff2 supports variations'),
+		 url('assets/fonts/GeistVF.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+}
+
+@font-face {
+	font-family: 'GeistMonoVF';
+	src: url('assets/fonts/GeistMonoVF.woff2') format('woff2 supports variations'),
+		 url('assets/fonts/GeistMonoVF.woff2') format('woff2-variations');
+	font-weight: 100 1000;
+}
+
+:root {
+	/* font: 16px 'GeistVF'; */
+	color-scheme: dark;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100dvh;
+	margin: 0;
+	background: black;
+}

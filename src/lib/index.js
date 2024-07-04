@@ -1,0 +1,6 @@
+// place files you want to import through the `$lib` alias in this folder.
+export function clickoutside(node) {
+	const handleClick = event => { if (node && !node.contains(event.target) && !event.defaultPrevented) { node.dispatchEvent(new CustomEvent('clickoutside', node)) } }
+	document.addEventListener('click', handleClick, true)
+	return { destroy() { document.removeEventListener('click', handleClick, true) } }
+}
